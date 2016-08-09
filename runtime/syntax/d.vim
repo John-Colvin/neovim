@@ -5,18 +5,6 @@
 " Last Change:  2016 Feb 2
 " Version:      0.28
 "
-" Contributors:
-"   - Jason Mills: original Maintainer
-"   - Kirk McDonald
-"   - Tim Keating
-"   - Frank Benoit
-"   - Shougo Matsushita
-"   - Ellery Newcomer
-"   - Steven N. Oliver
-"   - Sohgo Takeuchi
-"   - Robert Clipsham
-"   - Petar Kirov
-"
 " Please submit bugs/comments/suggestions to the github repo: 
 " https://github.com/JesseKPhillips/d.vim
 "
@@ -395,7 +383,7 @@ hi def link dPragmaIdentifier    Identifier
 hi def link dExtern              dExternal
 hi def link dExternIdentifier    Identifier
 
-" Marks contents of the asm statement body as special
+" Marks contents of the asm statment body as special
 
 syn match dAsmStatement "\<asm\>"
 syn region dAsmBody start="asm[\n]*\s*{"hs=e+1 end="}"he=e-1 contains=dAsmStatement,dAsmOpCode,@dComment,DUserLabel
